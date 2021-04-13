@@ -10,7 +10,7 @@ const morgan = require('morgan');
 const PORT  = process.env.PORT || 5000;
 var app = express();
 const bodyParser=require('body-parser');
-const static_path=path.join(__dirname,"./client/build/index");
+const static_path=path.join(__dirname,"./clientside/build/index");
 const uri='mongodb://localhost:27017/abcde';
 const MONGODB_URI='mongodb+srv://chirag:Chirag@7321@cluster0.sbwl0.mongodb.net/chirag?retryWrites=true&w=majority';
 mongoose.connect(process.env.MONGODB_URI || MONGODB_URI, {
@@ -335,10 +335,10 @@ app.post("/login", async(req,res)=>{
 
 // This middleware informs the express application to serve our compiled React files
 if (process.env.NODE_ENV === 'production' ) {
-  app.use(express.static(path.join(__dirname, 'client/build')));
+  app.use(express.static(path.join(__dirname, 'clientside/build')));
 
   app.get('*', function (req, res) {
-      res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+      res.sendFile(path.join(__dirname, 'clientside/build', 'index.html'));
   });
 };
 
@@ -347,10 +347,10 @@ app.use(morgan('tiny'));
 
 // This middleware informs the express application to serve our compiled React files
 if (process.env.NODE_ENV === 'production' || process.env.NODE_ENV === 'staging') {
-  app.use(express.static(path.join(__dirname, 'client/build')));
+  app.use(express.static(path.join(__dirname, 'clientside/build')));
 
   app.get('*', function (req, res) {
-      res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+      res.sendFile(path.join(__dirname, 'clientside/build', 'index.html'));
   });
 };
 
