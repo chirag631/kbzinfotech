@@ -27,29 +27,27 @@ export default function Footer() {
  
 
   return (
-    <BottomNavigation
-      
-      className={classes.root}
-    >
-<Grid container justify="center" >
-        
-        
-        <Grid item xs={4} >
-        <Typography   variant="h7"  gutterBottom >KBZ Infotech © 2021 All rights reserved.</Typography>  
-        </Grid>
-        <Grid item xs={4}>
-        <TwitterIcon  />
-        <LinkedInIcon />
-        <FacebookIcon  />
-        </Grid>
-        <Grid item xs={4} >
-        <Typography   variant="h7"  gutterBottom >Privacy Policy</Typography> 
-        <Typography className={classes.Typography}  variant="h7"  gutterBottom >Warranty Claim</Typography> 
-        </Grid>
-        
-        
-    </Grid>
-   </BottomNavigation>
-
+    <div>
+    <footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <ul class="social">
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <p class="copyright">Copyright &copy; 2021 KBZ Infotech </p>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
   );
 }

@@ -7,7 +7,7 @@ import Logout from './components/Logout'
 import Addproject from "./components/Addproject"
 import Updateprofile from './components/Updateprofile'
 import Viewproject from './components/Viewproject';
-import Footer from './components/Footer'
+
 import './assets/css/bootstrap.min.css';
 import './assets/css/flex-slider.css'
 import './assets/css/font-awesome.css'
@@ -38,6 +38,7 @@ function App() {
     <Router >
       <Switch>
         <Route exact path="/" component={Home} />
+        
         
       </Switch>
   </Router>
