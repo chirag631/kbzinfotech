@@ -51,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
                             <li><a href="#welcome" class="active">Home</a></li>
                             <li><a href="#features">About</a></li>
                             <li><a href="#work-process">Work Process</a></li>
-                            <li><a href="#testimonials">Testimonials</a></li>
+                            <li><a href="#testimonials">Client Review</a></li>
                             <li><a href="#pricing-plans">Pricing Tables</a></li>
                             <li><a href="#blog">Blog Entries</a></li>
                             <li><a href="#contact-us">Contact Us</a></li>
